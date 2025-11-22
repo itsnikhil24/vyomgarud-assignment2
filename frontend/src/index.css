@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+
+/* Custom dark theme */
+:root {
+  --color-primary: #8655e0; /* A vibrant purple/blue for highlights */
+  --color-text-light: #f0f4f8; /* Light gray/white text */
+  --color-text-secondary: #a0a6b0; 
+  --color-bg-dark: #0a0e1b; 
+  --color-card-bg: #111a2c; 
+  --color-border: #1f2a40; 
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+
+.metric-value {
+  @apply text-4xl font-extrabold;
+}
+
+
+.text-primary-accent {
+  color: var(--color-primary);
+}
